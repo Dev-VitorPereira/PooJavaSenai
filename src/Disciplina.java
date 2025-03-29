@@ -13,7 +13,7 @@ public class Disciplina {
     public void statusDiciplina(){
         System.out.println("Nome Diciplina: " + getNome()+ ", Carga horaria: "+ getCargaHoraria()+ ", Professor: "+ getProfessor());
 
-        JOptionPane.showMessageDialog(null, "Nome Diciplina: " + nome + " Carga Horaria " + cargaHoraria + " Professor: "+ professor);
+        JOptionPane.showMessageDialog(null, "Nome Diciplina: " + nome + " Carga Horaria " + cargaHoraria + " Professor: "+ professor.getNomeProfessor() );
     }
 
     public String getNome() {
