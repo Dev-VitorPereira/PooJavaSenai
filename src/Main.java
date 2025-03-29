@@ -14,10 +14,20 @@ public class Main {
 
         Escola escola1 = new Escola("SENAI");
 
+        Turma turma1 = new Turma("Java Fundamentos",2025,professor1);
+        String diciplina = JOptionPane.showInputDialog("Digite o nome da diciplina: ");
+
+        int cargaHoraria = Integer.parseInt(JOptionPane.showInputDialog("Digite a carga horaria: "));
+        Disciplina diciplina1 = new Disciplina(diciplina, cargaHoraria,professor1);
+
+
         escola1.adicionarAluno(aluno1);
         escola1.adicionarProfessor(professor1);
         escola1.listaAlunos();
         escola1.listaProfessor();
 
+        turma1.adicionandoTurma(aluno1);
+        turma1.listaTurma();
+        diciplina1.statusDiciplina();
     }
 }
